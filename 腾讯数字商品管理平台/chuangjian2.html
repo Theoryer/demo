@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯数字商品管理平台</title>
+    <link rel="stylesheet" href="chuangjian.css">
+</head>
+
+<body>
+    <!-- header头部模块制作-->
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Shape@2x.png" alt=""> 腾讯数字商品管理平台
+        </div>
+        <div class="user">
+            <span>首页</span>
+            <span>文档中心</span>
+            <span>|</span>
+            <span id="lilun">lilun<img src="./assets/icon_more.png" alt=""></span>
+        </div>
+        <div class="exit" id="exit"><a href="#"> 退出登录</a></div>
+    </header>
+    <!-- header头部模块制作  end-->
+    <div>
+        <!-- nav左侧导航栏 -->
+        <div class="yincang" id="yincang">&lt;</div>
+        <div class="nav" id="nav">
+            <img src="./assets/icon/导航栏/账户.png" alt="" class="img1">
+            <ul>个人账户
+                <li>账户资产</li>
+                <li>基础信息</li>
+                <li>我的合同</li>
+            </ul>
+            <img src="./assets/Artboard Copy 19@1x.png" alt="" class="img2">
+            <ul>订单管理
+                <li>我的订单</li>
+                <li class="chuangjian">创建订单</li>
+            </ul>
+        </div>
+        <div class="main" id="main">
+            <div class="top">
+                <span>订单管理</span>
+                <span>></span>
+                <span>创建订单</span>
+            </div>
+            <div class="liucheng">
+                <p class="text1"><span class="yuan">1</span> 编辑订单 </p>
+                <div class="line1"></div>
+                <p class="text1 text2"><span class="yuan yuan2">2</span> 支付订单</p>
+                <div class="line1 line2"></div>
+                <p class="text1 text3"><span class="yuan yuan2">3</span> 商品使用</p>
+            </div>
+            <div class="head1"> <img src="./assets/Shape@2x.png" alt="">
+                <p>腾讯视频VIP</p>
+            </div>
+            <div class="line1 line3"></div>
+            <div class="vip">
+                <ul class="shangpin" id="shangpin">商品：
+                    <li class="ka ka1">月卡</li>
+                    <li class="ka">季卡</li>
+                    <li class="ka ka2">年卡</li>
+                </ul>
+                <ul class="jiagebiao">价格表
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>采购数量</th>
+                                <th>单价</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0 &lt; 采购数量&lt;1000</td>
+                                <td>17元</td>
+                            </tr>
+                            <tr>
+                                <td>1000&lt;采购数量</td>
+                                <td>17元</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+                <ul class="danjia">商品单价:
+                    <li>20元</li>
+                </ul>
+                <ul class="danjia aname">活动名称
+                    <li><button id="sub">-</button><input value="999" id="piece"><button id="add">+</button></li>
+                    <li class="tishi">温馨提示：距离下一个梯度单价19元还差100个月卡</li>
+                </ul>
+                <ul class="danjia zongjia">商品总价:
+                    <li id="zongjia">19980元</li>
+                </ul>
+            </div>
+            <div class="line1 line3 line4"></div>
+            <input type="checkbox" checked="cheched" class="danjia zongjia tongyi">
+            <span class="xieyi">同意购买协议</span>
+            <button class="zhifu zongjia"><a href="#" style="color: white;">支付</a></button>
+            <button class="fanhui zongjia"><a href="#" style=" color: #555555;">返回</a></button>
+        </div>
+    </div>
+    <script>
+        var exit = document.getElementById('exit');
+        var lilun = document.getElementById('lilun');
+        lilun.onmouseover = function() {
+            exit.style.display = 'block';
+        }
+        lilun.onmouseout = function() {
+            exit.style.display = 'none';
+        }
+        var shangpin = document.getElementById('shangpin');
+        var btns = shangpin.children;
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function() {
+                //先把全部颜色去掉，再选中当前的元素改色
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.color = '#555555';
+                    btns[i].style.border = "1px solid #DADDE0";
+                }
+                this.style.color = '#0080FF';
+                this.style.border = "1px solid #0080FF";
+
+            }
+        }
+        var sub = document.getElementById('sub');
+        var piece = document.getElementById('piece');
+        var add = document.getElementById('add');
+        var value = 999;
+        var zongjia = document.getElementById('zongjia');
+        sub.onclick = function() {
+            piece.value = value - 1;
+            value = value - 1;
+            if (piece.value < 0) {
+                alert("数据不能低于0")
+                piece.value = 1;
+            }
+            document.getElementById("zongjia").innerHTML = piece.value * 20;
+        }
+        add.onclick = function() {
+            piece.value = value + 1;
+            value = value + 1;
+            document.getElementById("zongjia").innerHTML = piece.value * 20;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯数字商品管理平台</title>
+    <link rel="stylesheet" href="xuanze.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Shape@2x.png" alt=""> 腾讯数字商品管理平台
+        </div>
+        <div class="user">
+            <span>首页</span>
+            <span>文档中心</span>
+            <span>|</span>
+            <span id="lilun">lilun<img src="./assets/icon_more.png" alt=""></span>
+        </div>
+        <div class="exit" id="exit"><a href="#"> 退出登录</a></div>
+    </header>
+    <!-- header头部模块制作  end-->
+    <div>
+        <!-- nav左侧导航栏 -->
+        <div class="yincang" id="yincang">&lt;</div>
+        <div class="nav" id="nav">
+            <img src="./assets/icon/导航栏/账户.png" alt="" class="img1">
+            <ul>个人账户
+                <li>账户资产</li>
+                <li>基础信息</li>
+                <li>我的合同</li>
+            </ul>
+            <img src="./assets/Artboard Copy 19@1x.png" alt="" class="img2">
+            <ul>订单管理
+                <li>我的订单</li>
+                <li class="chuangjian">创建订单</li>
+            </ul>
+        </div>
+        <div class="main" id="main">
+            <div class="top">
+                <span>订单管理</span>
+                <span>></span>
+                <span>创建订单</span>
+            </div>
+            <span class="xuanze">请选择您要购买的商品</span>
+            <div class="line1 line3"></div>
+            <div class="tengxun">
+                <img src="./assets/Artboard Copy 19@1x.png" alt="">
+                <h3>腾讯视频</h3>
+                <span>我是文字说明，我是文字说明，我是文字说明</span>
+                <a href="chuangjian2.html" class="button">购买</a>
+            </div>
+        </div>
+
+
+        <script>
+            var exit = document.getElementById('exit');
+            var lilun = document.getElementById('lilun');
+            lilun.onmouseover = function() {
+                exit.style.display = 'block';
+            }
+            lilun.onmouseout = function() {
+                exit.style.display = 'none';
+            }
+        </script>
+</body>
+
+</html>

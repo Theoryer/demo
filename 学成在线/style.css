@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.ad1 {
+    /*z-index: 控制定位的z轴前后，数字越大越前;*/
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.ad2 {
+    z-index: 1;
+    position: fixed;
+    top: 120px;
+    right: 0;
+}
+
+.fixed {
+    /* 走到浏览器宽度的一半 */
+    margin-left: 50%;
+    /* 走到版心盒子的一般距离 */
+    position: fixed;
+    left: 620px;
+    top: 600px;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+/*清除浮动，ul应用class:"clearfix"*/
+.clearfix:before,.clearfix::after {
+    content:"";
+    display: table;
+  }
+  .clearfix:after {
+      clear: both;
+  }
+  .clearfix {
+      *zoom: 1;
+  }
+/*清除浮动，ul应用class:"clearfix"*/
+li {
+    list-style: none;
+}
+.header {
+    height: 42px;
+    /*会层叠w的margin*/
+    margin: 30px auto;
+}
+
+.logo img{
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding:0 10px;
+    line-height: 42px;
+    font-size:18px;
+    color: #050505;
+}
+
+.nav ul li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 50px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid skyblue;
+    border-right:0;
+    font-size: 14px;
+    color: #bfbfbf;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    widows: 50px;
+    height: 42px;
+    border: 0;
+    background: url(images/search.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.banner {
+    height: 421px;
+    background-color:rgb(200, 194, 182);
+}
+.banner .w {
+    height: 421px; 
+    background: url(images/banner.png) no-repeat top center;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background-color:skyblue;
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding:0 20px;
+}
+.subnav ul li a {
+    font-size: 14px;
+    color: #000000;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: white;
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    /*浮动的盒子不会有外边距合并的问题*/
+    margin-top: 50px;
+}
+
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding:14px 0 ;
+    border-bottom: 1px solid #cccccc;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color:#4e4e4e ;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.goods {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    line-height: 60px;
+}
+
+.goods h3{
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    color: #050505;
+    border-left:1px solid #cccccc;
+}
+.mod {
+    float:right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+.box {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box-hd a  {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.box-bd ul {
+    width: 1225px;
+}
+/*父亲给个相对定位*/
+.box-bd ul li {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 270px;
+    background-color:#fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+/*儿子给个绝对定位*/
+.box-bd ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+.box-bd ul li > img {
+    width: 100%;
+}
+
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+}
+
+.box-bd .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box-bd .info span {
+    color: #ff7c2d;
+}
+
+.footer {
+    height: 415px;
+  
+}
+
+.footer .w {
+    padding-top: 35px;
+}
+.footer .copyright {
+    float: left;
+}
+
+.footer .copyright p {
+    font-size: 12px;
+    color: #666666;
+    margin: 20px 0 15px 0;
+}
+
+.footer .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color:#00a4ff;
+    font-size: 16px;
+}
+
+.footer .copyright a:hover{
+    color: #999999;
+}
+
+.footer .link {
+    float: right;
+}
+
+.footer .link dl {
+    float: left;
+    margin-left: 100px;
+
+}
+
+.footer .link dl dt {
+    font-size: 16px;
+    color: #333333;
+}
+
+.footer .link dl  dd a {
+    font-size: 12px;
+    color: #333333;
+}

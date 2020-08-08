@@ -1,0 +1,274 @@
+body a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.set {
+    float: left;
+}
+
+.header {
+    height: 66px;
+    width: 1440px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 0 0 #DADDE0;
+    /* background-color: pink; */
+}
+
+.header .logo {
+    display: inline-block;
+    float: left;
+    font-family: Helvetica;
+    color: #1960d2;
+    font-size: 24px;
+    /* margin-top: 21px;
+    margin-left: 68px; */
+    /* background-color: greenyellow; */
+    padding-top: 0;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-left: 32px;
+    margin-top: 18px;
+}
+
+.header .user {
+    position: relative;
+    float: right;
+    list-style: none;
+    /* background-color: plum; */
+    display: block;
+    padding-top: 23px;
+    line-height: 23px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    text-align: left;
+}
+
+.exit {
+    display: none;
+    position: absolute;
+    margin-left: 1334px;
+    margin-top: 68px;
+    width: 90px;
+    height: 180px;
+    background: #FAFAFA;
+    text-align: center;
+    border: 1px solid #D3D3D3;
+    z-index: 10;
+}
+
+.exit a {
+    float: left;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.header .user span {
+    padding-right: 40px;
+}
+
+.nav {
+    float: left;
+    background-color: #F2F5F7;
+    height: 1024px;
+    width: 200px;
+    position: absolute;
+}
+
+.yincang {
+    margin-left: 200px;
+    margin-top: 19.5px;
+    float: left;
+    width: 15.5px;
+    height: 35px;
+    background: #F2F5F7;
+    border: 1px solid #E0E0E0;
+    border-left: 0;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.nav .img1 {
+    float: left;
+    margin-left: 29px;
+    margin-top: 42px;
+    width: 18px;
+    height: 18px;
+}
+
+.nav .img2 {
+    float: left;
+    margin-left: 29px;
+    margin-top: 27px;
+    width: 18px;
+    height: 18px;
+}
+
+.nav ul {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+    line-height: 14px;
+    padding-top: 28px;
+    margin-left: 16px;
+}
+
+.nav ul li {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+    /* margin-left: 64px; */
+}
+
+.nav .chuangjian {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #007AF5;
+}
+
+.main {
+    margin-left: 200px;
+    /* height: 1024px;
+    width: 1024px; */
+    overflow: hidden;
+    /* background-color: sandybrown; */
+}
+
+.main .top {
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 21px;
+    height: 29px;
+    /* background-color: greenyellow; */
+    font-size: 21px;
+}
+
+.main .liucheng {
+    position: absolute;
+    width: 1241px;
+    height: 102px;
+    margin-top: 72px;
+    /* background-color: green; */
+    background: #FAFAFA;
+    margin-left: -5px;
+}
+
+.text1 {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 38px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    float: left;
+}
+
+.line1 {
+    width: 360px;
+    height: 1px;
+    background: #D3D3D3;
+    margin-left: 162px;
+    margin-top: 51px;
+    float: left;
+}
+
+.text2 {
+    margin-left: 534px;
+}
+
+.line2 {
+    margin-left: 123px;
+}
+
+.text3 {
+    margin-left: 1015px;
+}
+
+.line3 {
+    margin-left: 49px;
+    margin-top: 136px;
+    width: 1160px;
+}
+
+.vip {
+    margin-left: 10px;
+}
+
+.xuanze {
+    position: absolute;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+    line-height: 18px;
+    font-weight: 700;
+    margin-left: 48px;
+    margin-top: 102px;
+}
+
+.tengxun {
+    position: absolute;
+    width: 275px;
+    height: 324px;
+    background: #FFFFFF;
+    border: 1px solid #E4E8EB;
+    box-shadow: 0 0 4px 0 rgba(207, 207, 207, 0.50);
+    margin-left: 48px;
+    margin-top: 161px;
+}
+
+.tengxun img {
+    position: absolute;
+    margin-left: 88px;
+    margin-top: 24px;
+    width: 99px;
+    height: 97px;
+}
+
+.tengxun h3 {
+    position: absolute;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+    line-height: 18px;
+    margin-left: 102px;
+    margin-top: 140px;
+}
+
+.tengxun span {
+    position: absolute;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    width: 154px;
+    height: 48px;
+    line-height: 16px;
+    margin-left: 64px;
+    margin-top: 180px;
+}
+
+.tengxun .button {
+    position: absolute;
+    background: #1183ED;
+    border-radius: 3px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 249px;
+    margin-left: 61px;
+    width: 154px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
